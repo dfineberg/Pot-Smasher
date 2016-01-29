@@ -186,7 +186,7 @@ GameObject:
   - 58: {fileID: 1084691328}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80878970745bc4845900d1bac59b03a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
   walkSpeed: 20
 --- !u!58 &1084691328
 CircleCollider2D:
