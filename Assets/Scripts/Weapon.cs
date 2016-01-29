@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Weapon : MonoBehaviour {
 
+    public int damage;
+
     Animator animator;
     int downHash;
     int leftHash;
@@ -30,6 +32,11 @@ public class Weapon : MonoBehaviour {
         {
             return false;
         }
+    }
+
+    public virtual bool WaitWhileAttacking()
+    {
+        return true;
     }
 
 	public virtual void Attack(Direction attackDir)
