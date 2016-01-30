@@ -5,12 +5,12 @@ namespace PS
 {
 	public class Pot : MonoBehaviour {
 
-		public int HP = 1;
+		public int HP;
 
 		// Use this for initialization
 		void Start () 
 		{
-			HP = 1;
+			HP = 5;
 		}
 		
 		// Update is called once per frame
@@ -41,6 +41,12 @@ namespace PS
 
 		public virtual void Break() 
 		{
+			this.gameObject.SetActive(false);
+		}
+
+		public virtual void BreakImmediately()
+		{
+			Debug.Log("Break Immediate Pot");
 			this.gameObject.SetActive(false);
 		}
 	}
