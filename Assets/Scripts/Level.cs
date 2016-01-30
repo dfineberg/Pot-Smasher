@@ -39,7 +39,7 @@ namespace PS
 
 		public void Load()
 		{
-			Debug.Log("Loading Level " + levelNumber);
+			//Debug.Log("Loading Level " + levelNumber);
 			BinaryFormatter bf = new BinaryFormatter(); 
 			FileStream file = File.Open(Application.persistentDataPath + "/level" + levelNumber + ".dat", FileMode.Open );
 
@@ -56,7 +56,7 @@ namespace PS
 
 		public void Save()
 		{
-			Debug.Log("Saving Level " + levelNumber);
+			//Debug.Log("Saving Level " + levelNumber);
 			BinaryFormatter bf = new BinaryFormatter(); 
 			FileStream file = File.Create(Application.persistentDataPath + "/level" + levelNumber + ".dat");
 
