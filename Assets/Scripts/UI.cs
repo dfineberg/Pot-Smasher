@@ -25,6 +25,7 @@ public class UI : MonoBehaviour {
     {
         targetFill = (float)xp / target;
         showing = true;
+        showCounter = 0f;
     }
 
     void Update()
