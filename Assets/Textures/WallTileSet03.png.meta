@@ -1,29 +1,25 @@
 fileFormatVersion: 2
-guid: 70069a415a4444c5c8e6c927c0dfc7ef
-timeCreated: 1454181112
+guid: 39c453d8852ea4a5d9f66beed050c507
+timeCreated: 1454181327
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: level_tiles_test_0
-    21300002: level_tiles_test_1
-    21300004: level_tiles_test_2
-    21300006: level_tiles_test_3
-    21300008: level_tiles_test_4
-    21300010: level_tiles_test_5
-    21300012: level_tiles_test_6
-    21300014: level_tiles_test_7
-    21300016: level_tiles_test_8
-    21300018: level_tiles_test_9
-    21300020: level_tiles_test_10
-    21300022: level_tiles_test_11
-    21300024: level_tiles_test_12
-    21300026: level_tiles_test_13
-    21300028: level_tiles_test_14
-    21300030: level_tiles_test_15
-    21300032: level_tiles_test_16
-    21300034: level_tiles_test_17
-    21300036: level_tiles_test_18
-    21300038: level_tiles_test_19
+    21300000: WallTileSet03_0
+    21300002: WallTileSet03_1
+    21300004: WallTileSet03_2
+    21300006: WallTileSet03_3
+    21300008: WallTileSet03_4
+    21300010: WallTileSet03_5
+    21300012: WallTileSet03_6
+    21300014: WallTileSet03_7
+    21300016: WallTileSet03_8
+    21300018: WallTileSet03_9
+    21300020: WallTileSet03_10
+    21300022: WallTileSet03_11
+    21300024: WallTileSet03_12
+    21300026: WallTileSet03_13
+    21300028: WallTileSet03_14
+    21300030: WallTileSet03_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -47,10 +43,10 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: 4
-  maxTextureSize: 256
+  maxTextureSize: 2048
   textureSettings:
     filterMode: 0
-    aniso: 1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -64,112 +60,101 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 16
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: level_tiles_test_0
+    - name: WallTileSet03_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 17
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_1
+    - name: WallTileSet03_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 17
+        x: 16
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_2
+    - name: WallTileSet03_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 17
+        x: 32
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_3
+    - name: WallTileSet03_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 17
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_4
+    - name: WallTileSet03_4
       rect:
         serializedVersion: 2
-        x: 68
-        y: 17
+        x: 64
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_5
+    - name: WallTileSet03_5
       rect:
         serializedVersion: 2
-        x: 85
-        y: 17
+        x: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_6
+    - name: WallTileSet03_6
       rect:
         serializedVersion: 2
-        x: 102
-        y: 17
+        x: 96
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_7
+    - name: WallTileSet03_7
       rect:
         serializedVersion: 2
-        x: 119
-        y: 17
+        x: 112
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_8
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 17
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: level_tiles_test_9
+    - name: WallTileSet03_8
       rect:
         serializedVersion: 2
         x: 0
@@ -180,10 +165,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_10
+    - name: WallTileSet03_9
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
         width: 16
         height: 16
@@ -191,10 +176,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_11
+    - name: WallTileSet03_10
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
         width: 16
         height: 16
@@ -202,10 +187,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_12
+    - name: WallTileSet03_11
       rect:
         serializedVersion: 2
-        x: 51
+        x: 48
         y: 0
         width: 16
         height: 16
@@ -213,10 +198,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_13
+    - name: WallTileSet03_12
       rect:
         serializedVersion: 2
-        x: 68
+        x: 64
         y: 0
         width: 16
         height: 16
@@ -224,10 +209,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_14
+    - name: WallTileSet03_13
       rect:
         serializedVersion: 2
-        x: 85
+        x: 80
         y: 0
         width: 16
         height: 16
@@ -235,10 +220,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_15
+    - name: WallTileSet03_14
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 0
         width: 16
         height: 16
@@ -246,21 +231,10 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: level_tiles_test_16
+    - name: WallTileSet03_15
       rect:
         serializedVersion: 2
-        x: 119
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: level_tiles_test_17
-      rect:
-        serializedVersion: 2
-        x: 136
+        x: 112
         y: 0
         width: 16
         height: 16
