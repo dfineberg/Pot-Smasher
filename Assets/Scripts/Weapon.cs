@@ -76,6 +76,11 @@ public class Weapon : MonoBehaviour {
         }
     }
 
+    public virtual void StopAttacking()
+    {
+        if (IsAttacking() && animator) animator.SetTrigger(idleHash);
+    }
+
     public void SortInFrontOfPlayerEvent()
     {
         spriteRenderer.sortingOrder = 1;

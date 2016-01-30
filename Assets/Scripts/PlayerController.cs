@@ -44,8 +44,9 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && !attacking)
+        if(Input.GetKeyDown(KeyCode.Space) && !attacking && !LevelUpPlaying())
         {
+            attackAnimFinish = false;
             StartCoroutine(AttackRoutine());
         }
     }
@@ -83,8 +84,13 @@ public class PlayerController : MonoBehaviour {
     public void LevelUp()
     {
         animator.SetTrigger(levelUpHash);
+        weapon.StopAttacking();
+        attackAnimFinish = false;
+        currentDirection = Direction.down;
         currentXP = 0;
         currentLevel++;
+        attacking = false;
+
         if (currentLevel < weapons.Length)
         {
             GameObject newWeapon = (GameObject)Instantiate(weapons[currentLevel - 1]);
