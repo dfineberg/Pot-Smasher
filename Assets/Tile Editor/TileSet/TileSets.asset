@@ -64,7 +64,7 @@ MonoBehaviour:
       Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 0
+      Rotation: 90
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
       Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 1
-      Rotation: 0
+      Rotation: 270
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
       Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 0
+      Rotation: 90
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
@@ -145,16 +145,16 @@ MonoBehaviour:
       Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 0
+      Rotation: 90
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300028, guid: 70069a415a4444c5c8e6c927c0dfc7ef, type: 3}
-      Collision: 0
+      Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 0
+      Rotation: 90
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
       Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 0
+      Rotation: 90
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0

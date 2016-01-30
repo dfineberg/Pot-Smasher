@@ -2,35 +2,168 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+using System.Collections.Generic;
 
 namespace PS
 {
 	public class LevelLoader : MonoBehaviour 
 	{
-		int levelNumber = 1;
+		public int currentLevelNumber;
+		public SpriteRenderer fadeSprite;
+		public float fadeSpeed = 1.0f;
+
+		List<int>visitedLevels;
+		bool loading = false;
+		Level currentLevel = null;
 
 		public static LevelLoader Instance{private set;get;}
 
-		void Awake () {
+		void Awake () 
+		{
+			if ( Instance ) DestroyImmediate( this.gameObject );
+			else Instance = this;
 
-			Instance = this;
+			fadeSprite.gameObject.SetActive(true);
+		}
 
-			if ( Instance )
+		void Start ()
+		{
+			Reset();
+			visitedLevels = new List<int>();
+			LoadLevelResource(currentLevelNumber);
+			StartCoroutine(FadeToLevel());
+		}
+
+		void Reset ()
+		{
+			for (int i = 1; i < 999; ++i )
 			{
-				DestroyImmediate( this.gameObject );
+				//("fontname",typeof(Font)) as Font;
+				GameObject level = Resources.Load(i.ToString(),typeof(GameObject)) as GameObject;
+
+				if (level)
+				{
+					//Debug.Log("Found Level " + i);
+					level.GetComponent<Level>().Save();
+				}
+				else break;
 			}
+		}
 
-			else
+		void ResetVisited ()
+		{
+			foreach (int levelNumber in visitedLevels)
 			{
-				Instance = this;
+				//("fontname",typeof(Font)) as Font;
+				GameObject level = Resources.Load(levelNumber.ToString(),typeof(GameObject)) as GameObject;
+				Debug.Log("Resetting Level " + levelNumber);
+				if (level)
+				{
+					level.GetComponent<Level>().Save();
+				}
+				else break;
 			}
 		}
 
 		public void LoadLevel(int levelNumber)
 		{
-			++levelNumber;
+			if (loading) return;
+			loading = true;
+			StartCoroutine(LoadLevelSequence(levelNumber));
+		}
 
-			SceneManager.LoadScene( "level" + levelNumber );
+		bool fadeOut( float delta )
+		{
+			Color c = fadeSprite.color;
+			c.a -= delta * fadeSpeed;
+			if (c.a < 0.0f) c.a = 0.0f;
+			fadeSprite.color = c;
+			if (fadeSprite.color.a == 0.0f )
+			{
+				return true;
+			}
+			return false;
+		}
+
+		bool fadeIn( float delta )
+		{
+			Color c = fadeSprite.color;
+			c.a += delta * fadeSpeed;
+			if (c.a > 1.0f) c.a = 1.0f;
+			fadeSprite.color = c;
+			if (fadeSprite.color.a == 1.0f )
+			{
+				return true;
+			}
+			return false;
+		}
+
+		IEnumerator FadeToBlack()
+		{
+			// fade screen to black
+			fadeSprite.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+
+			while (!fadeIn(Time.deltaTime))
+			{
+				yield return false;
+			}
+
+			yield return true;
+		}
+
+		IEnumerator FadeToLevel()
+		{
+			// fade screen to black
+			fadeSprite.color = Color.white;
+
+			while (!fadeOut(Time.deltaTime))
+			{
+				yield return false;
+			}
+
+			yield return true;
+		}
+
+		void LoadLevelResource(int levelNumber)
+		{
+			// load the level resource and get the level object
+			GameObject level = (GameObject)Instantiate(Resources.Load(levelNumber.ToString()));
+			if (level == null)
+			{
+				Debug.Log("Could not load level " + levelNumber + " from Resources folder");
+				return;
+			}
+			visitedLevels.Add(levelNumber);
+
+			// delete the current level if it exists
+			if (currentLevel != null)
+			{
+				currentLevel.Save();
+				Destroy(currentLevel.gameObject);
+				currentLevel = null;
+			}
+		
+			// set the current level as the new level
+			currentLevel = level.GetComponent<Level>();
+			currentLevel.Load();
+		}
+
+		IEnumerator LoadLevelSequence(int levelNumber)
+		{
+
+			// fade screen to black
+			yield return StartCoroutine(FadeToBlack());
+
+			// load level resource
+			LoadLevelResource(levelNumber);
+
+			// fade level back in
+			yield return StartCoroutine(FadeToLevel());
+
+			// level has been loaded
+			loading = false;
+
+			yield return true;
 		}
 	}
 }

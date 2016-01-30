@@ -5,7 +5,7 @@ namespace PS
 {
 	public class Door : MonoBehaviour {
 
-		public int leveNumber;
+		public int levelNumber;
 
 		// Use this for initialization
 		void OnTriggerEnter2D(Collider2D other) 
@@ -13,7 +13,7 @@ namespace PS
 			if (other.tag == "Player")
 			{
 				// load level sequence
-				LevelLoader.Instance.LoadLevel(leveNumber);
+				LevelLoader.Instance.LoadLevel(levelNumber);
 			}
 		}
 	}
