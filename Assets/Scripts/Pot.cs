@@ -10,7 +10,7 @@ namespace PS
 		// Use this for initialization
 		void Start () 
 		{
-			HP = 5;
+			HP = 1;
 		}
 		
 		// Update is called once per frame
@@ -41,6 +41,7 @@ namespace PS
 
 		public virtual void Break() 
 		{
+            Instantiate(PotSmasher.instance.smashParticles, transform.position, Quaternion.identity);
             BreakImmediately();
 		}
 
