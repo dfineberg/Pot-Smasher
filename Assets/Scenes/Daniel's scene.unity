@@ -124,10 +124,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5889626, guid: 22afe24a7273b6a449ac1cde39805e6e, type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22afe24a7273b6a449ac1cde39805e6e, type: 2}
   m_IsPrefabParent: 0
@@ -191,7 +187,7 @@ Camera:
   far clip plane: 1000
   field of view: 91.589
   orthographic: 1
-  orthographic size: 0.7
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
