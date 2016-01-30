@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 39c453d8852ea4a5d9f66beed050c507
-timeCreated: 1454181327
+timeCreated: 1454189301
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -20,6 +20,12 @@ TextureImporter:
     21300026: WallTileSet03_13
     21300028: WallTileSet03_14
     21300030: WallTileSet03_15
+    21300032: WallTileSet03_16
+    21300034: WallTileSet03_17
+    21300036: WallTileSet03_18
+    21300038: WallTileSet03_19
+    21300040: WallTileSet03_20
+    21300042: WallTileSet03_21
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -157,8 +163,8 @@ TextureImporter:
     - name: WallTileSet03_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -168,8 +174,8 @@ TextureImporter:
     - name: WallTileSet03_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 144
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -179,8 +185,8 @@ TextureImporter:
     - name: WallTileSet03_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 160
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -190,7 +196,7 @@ TextureImporter:
     - name: WallTileSet03_11
       rect:
         serializedVersion: 2
-        x: 48
+        x: 0
         y: 0
         width: 16
         height: 16
@@ -201,7 +207,7 @@ TextureImporter:
     - name: WallTileSet03_12
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 0
         width: 16
         height: 16
@@ -212,7 +218,7 @@ TextureImporter:
     - name: WallTileSet03_13
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 0
         width: 16
         height: 16
@@ -223,7 +229,7 @@ TextureImporter:
     - name: WallTileSet03_14
       rect:
         serializedVersion: 2
-        x: 96
+        x: 48
         y: 0
         width: 16
         height: 16
@@ -234,7 +240,73 @@ TextureImporter:
     - name: WallTileSet03_15
       rect:
         serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WallTileSet03_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WallTileSet03_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WallTileSet03_18
+      rect:
+        serializedVersion: 2
         x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WallTileSet03_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WallTileSet03_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WallTileSet03_21
+      rect:
+        serializedVersion: 2
+        x: 160
         y: 0
         width: 16
         height: 16

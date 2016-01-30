@@ -411,5 +411,5 @@ MonoBehaviour:
       Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
-      OrderInLayer: 0
+      OrderInLayer: 1
       Tag: Pot
