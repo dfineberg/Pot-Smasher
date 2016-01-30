@@ -127,12 +127,16 @@ Prefab:
     - target: {fileID: 21209424, guid: 22afe24a7273b6a449ac1cde39805e6e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300014, guid: d921e89a2204c174c87c6284184e6d52,
+      objectReference: {fileID: 21300082, guid: d921e89a2204c174c87c6284184e6d52,
         type: 3}
     - target: {fileID: 11445938, guid: 22afe24a7273b6a449ac1cde39805e6e, type: 2}
       propertyPath: weapon
       value: 
       objectReference: {fileID: 1191060728}
+    - target: {fileID: 21209424, guid: 22afe24a7273b6a449ac1cde39805e6e, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 762274285
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22afe24a7273b6a449ac1cde39805e6e, type: 2}
   m_IsPrefabParent: 0
@@ -309,8 +313,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 762274285
+  m_SortingOrder: -1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
