@@ -7,6 +7,7 @@ public class PotSmasher : MonoBehaviour {
 
     public Sprite smashSprite;
     public GameObject smashParticles;
+    public GameObject gemPrefab;
 
     void Start()
     {

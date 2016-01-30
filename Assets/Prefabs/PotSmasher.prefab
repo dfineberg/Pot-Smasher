@@ -41,6 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smashSprite: {fileID: 21300000, guid: e2a3b975aacc8419db9e7cd66350ca90, type: 3}
   smashParticles: {fileID: 105368, guid: 5047e91c6847243aa8fd71461ca87e83, type: 2}
+  gemPrefab: {fileID: 118038, guid: b4b69d83280bc4c44bfa12320d8dfd07, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
