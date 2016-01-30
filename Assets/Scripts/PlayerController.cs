@@ -59,6 +59,11 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Gem")) Destroy(col.gameObject);
+    }
+
     public void Move(Vector2 moveVector)
     {
         animator.SetBool(walkingHash, true);
