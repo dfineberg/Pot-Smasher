@@ -1,0 +1,883 @@
+fileFormatVersion: 2
+guid: bebb62df35f9afd46aef798220284e27
+timeCreated: 1454105350
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PotSmasherWalkingSpriteSheet01_0
+    21300002: PotSmasherWalkingSpriteSheet01_1
+    21300004: PotSmasherWalkingSpriteSheet01_2
+    21300006: PotSmasherWalkingSpriteSheet01_3
+    21300008: PotSmasherWalkingSpriteSheet01_4
+    21300010: PotSmasherWalkingSpriteSheet01_5
+    21300012: PotSmasherWalkingSpriteSheet01_6
+    21300014: PotSmasherWalkingSpriteSheet01_7
+    21300016: PotSmasherWalkingSpriteSheet01_8
+    21300018: PotSmasherWalkingSpriteSheet01_9
+    21300020: PotSmasherWalkingSpriteSheet01_10
+    21300022: PotSmasherWalkingSpriteSheet01_11
+    21300024: PotSmasherWalkingSpriteSheet01_12
+    21300026: PotSmasherWalkingSpriteSheet01_13
+    21300028: PotSmasherWalkingSpriteSheet01_14
+    21300030: PotSmasherWalkingSpriteSheet01_15
+    21300032: PotSmasherWalkingSpriteSheet01_16
+    21300034: PotSmasherWalkingSpriteSheet01_17
+    21300036: PotSmasherWalkingSpriteSheet01_18
+    21300038: PotSmasherWalkingSpriteSheet01_19
+    21300040: PotSmasherWalkingSpriteSheet01_20
+    21300042: PotSmasherWalkingSpriteSheet01_21
+    21300044: PotSmasherWalkingSpriteSheet01_22
+    21300046: PotSmasherWalkingSpriteSheet01_23
+    21300048: PotSmasherWalkingSpriteSheet01_24
+    21300050: PotSmasherWalkingSpriteSheet01_25
+    21300052: PotSmasherWalkingSpriteSheet01_26
+    21300054: PotSmasherWalkingSpriteSheet01_27
+    21300056: PotSmasherWalkingSpriteSheet01_28
+    21300058: PotSmasherWalkingSpriteSheet01_29
+    21300060: PotSmasherWalkingSpriteSheet01_30
+    21300062: PotSmasherWalkingSpriteSheet01_31
+    21300064: PotSmasherWalkingSpriteSheet01_32
+    21300066: PotSmasherWalkingSpriteSheet01_33
+    21300068: PotSmasherWalkingSpriteSheet01_34
+    21300070: PotSmasherWalkingSpriteSheet01_35
+    21300072: PotSmasherWalkingSpriteSheet01_36
+    21300074: PotSmasherWalkingSpriteSheet01_37
+    21300076: PotSmasherWalkingSpriteSheet01_38
+    21300078: PotSmasherWalkingSpriteSheet01_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PotSmasherWalkingSpriteSheet01_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -11, y: 10}
+        - {x: -11, y: -12}
+        - {x: -5, y: -15}
+        - {x: 10, y: -15}
+        - {x: 11, y: -14}
+        - {x: 11, y: 5}
+        - {x: 8, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 14}
+        - {x: -7, y: 14}
+        - {x: -11, y: 5}
+        - {x: -10, y: -10}
+        - {x: -5, y: -13}
+        - {x: 9, y: -13}
+        - {x: 11, y: -8}
+        - {x: 11, y: 10}
+        - {x: 8, y: 13}
+    - name: PotSmasherWalkingSpriteSheet01_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 14}
+        - {x: -11, y: 7}
+        - {x: -11, y: -1}
+        - {x: -9, y: -9}
+        - {x: -1, y: -15}
+        - {x: 5, y: -15}
+        - {x: 10, y: -13}
+        - {x: 11, y: -1}
+        - {x: 11, y: 7}
+        - {x: 3, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 15}
+        - {x: -11, y: 13}
+        - {x: -11, y: -6}
+        - {x: -5, y: -15}
+        - {x: 8, y: -15}
+        - {x: 9, y: -13}
+        - {x: 11, y: 1}
+        - {x: 11, y: 7}
+        - {x: 7, y: 15}
+    - name: PotSmasherWalkingSpriteSheet01_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -11, y: 3}
+        - {x: -11, y: -12}
+        - {x: -3, y: -15}
+        - {x: 10, y: -15}
+        - {x: 11, y: -13}
+        - {x: 11, y: 8}
+        - {x: 8, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -11, y: 13}
+        - {x: -11, y: -9}
+        - {x: -9, y: -15}
+        - {x: 5, y: -15}
+        - {x: 11, y: -8}
+        - {x: 11, y: 4}
+        - {x: 5, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 14}
+        - {x: -11, y: 7}
+        - {x: -11, y: -7}
+        - {x: -6, y: -13}
+        - {x: 7, y: -13}
+        - {x: 11, y: -12}
+        - {x: 11, y: 7}
+        - {x: 10, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 14}
+        - {x: -7, y: 12}
+        - {x: -11, y: 7}
+        - {x: -11, y: 1}
+        - {x: -9, y: -13}
+        - {x: -7, y: -15}
+        - {x: -1, y: -15}
+        - {x: 10, y: -10}
+        - {x: 11, y: -6}
+        - {x: 11, y: 7}
+        - {x: 3, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 15}
+        - {x: -11, y: 8}
+        - {x: -11, y: 0}
+        - {x: -8, y: -12}
+        - {x: -7, y: -15}
+        - {x: -2, y: -15}
+        - {x: 11, y: -11}
+        - {x: 11, y: 9}
+        - {x: 8, y: 15}
+    - name: PotSmasherWalkingSpriteSheet01_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 16}
+        - {x: -11, y: 9}
+        - {x: -11, y: -7}
+        - {x: -8, y: -13}
+        - {x: -6, y: -15}
+        - {x: -1, y: -15}
+        - {x: 9, y: -13}
+        - {x: 11, y: -9}
+        - {x: 11, y: 8}
+        - {x: 8, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 15}
+        - {x: -13, y: 8}
+        - {x: -13, y: -1}
+        - {x: -11, y: -13}
+        - {x: -6, y: -15}
+        - {x: 2, y: -15}
+        - {x: 11, y: -2}
+        - {x: 11, y: 12}
+        - {x: 4, y: 15}
+    - name: PotSmasherWalkingSpriteSheet01_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -11, y: 9}
+        - {x: -11, y: -14}
+        - {x: 8, y: -14}
+        - {x: 13, y: -7}
+        - {x: 13, y: 11}
+        - {x: 5, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 13}
+        - {x: -13, y: 7}
+        - {x: -14, y: 2}
+        - {x: -14, y: -10}
+        - {x: -9, y: -13}
+        - {x: -2, y: -14}
+        - {x: 12, y: -14}
+        - {x: 12, y: 13}
+    - name: PotSmasherWalkingSpriteSheet01_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 14}
+        - {x: -11, y: 7}
+        - {x: -11, y: -12}
+        - {x: -8, y: -15}
+        - {x: 7, y: -15}
+        - {x: 14, y: -3}
+        - {x: 14, y: 5}
+        - {x: 11, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 16}
+        - {x: -11, y: 10}
+        - {x: -11, y: -13}
+        - {x: -9, y: -14}
+        - {x: 3, y: -14}
+        - {x: 12, y: -11}
+        - {x: 13, y: -5}
+        - {x: 13, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_15
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 15}
+        - {x: -13, y: 11}
+        - {x: -13, y: -2}
+        - {x: -9, y: -15}
+        - {x: 0, y: -15}
+        - {x: 11, y: -1}
+        - {x: 11, y: 12}
+        - {x: 4, y: 15}
+    - name: PotSmasherWalkingSpriteSheet01_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 14}
+        - {x: -11, y: 10}
+        - {x: -11, y: -9}
+        - {x: -4, y: -15}
+        - {x: 11, y: -15}
+        - {x: 12, y: -9}
+        - {x: 12, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 13}
+        - {x: -11, y: 11}
+        - {x: -11, y: -7}
+        - {x: -7, y: -13}
+        - {x: 1, y: -15}
+        - {x: 11, y: -15}
+        - {x: 14, y: -10}
+        - {x: 14, y: 11}
+        - {x: 13, y: 13}
+    - name: PotSmasherWalkingSpriteSheet01_18
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 15}
+        - {x: -11, y: 9}
+        - {x: -11, y: -11}
+        - {x: -5, y: -14}
+        - {x: 8, y: -14}
+        - {x: 10, y: -12}
+        - {x: 13, y: -4}
+        - {x: 13, y: 6}
+        - {x: 10, y: 15}
+    - name: PotSmasherWalkingSpriteSheet01_19
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 16}
+        - {x: -6, y: 16}
+        - {x: -11, y: 14}
+        - {x: -11, y: -11}
+        - {x: -10, y: -14}
+        - {x: 6, y: -14}
+        - {x: 13, y: -1}
+        - {x: 13, y: 9}
+        - {x: 12, y: 13}
+    - name: PotSmasherWalkingSpriteSheet01_20
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 14}
+        - {x: -11, y: 7}
+        - {x: -11, y: -12}
+        - {x: -5, y: -15}
+        - {x: 9, y: -15}
+        - {x: 11, y: -10}
+        - {x: 11, y: 9}
+        - {x: 7, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 13}
+        - {x: -5, y: 13}
+        - {x: -11, y: 5}
+        - {x: -11, y: -8}
+        - {x: -10, y: -10}
+        - {x: -2, y: -15}
+        - {x: 5, y: -15}
+        - {x: 8, y: -12}
+        - {x: 11, y: -6}
+        - {x: 11, y: 6}
+    - name: PotSmasherWalkingSpriteSheet01_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 14}
+        - {x: -11, y: 10}
+        - {x: -11, y: -10}
+        - {x: -3, y: -15}
+        - {x: 4, y: -15}
+        - {x: 8, y: -13}
+        - {x: 11, y: -6}
+        - {x: 11, y: 8}
+        - {x: 8, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_23
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 16}
+        - {x: -11, y: 9}
+        - {x: -11, y: -3}
+        - {x: -10, y: -9}
+        - {x: -3, y: -16}
+        - {x: 5, y: -16}
+        - {x: 9, y: -14}
+        - {x: 11, y: 0}
+        - {x: 11, y: 9}
+        - {x: 6, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_24
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: -11, y: 9}
+        - {x: -11, y: -6}
+        - {x: -5, y: -15}
+        - {x: 7, y: -15}
+        - {x: 8, y: -13}
+        - {x: 11, y: -3}
+        - {x: 11, y: 7}
+        - {x: 5, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_25
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 14}
+        - {x: -7, y: 14}
+        - {x: -11, y: 6}
+        - {x: -11, y: -14}
+        - {x: -8, y: -15}
+        - {x: 6, y: -15}
+        - {x: 11, y: -8}
+        - {x: 11, y: 6}
+    - name: PotSmasherWalkingSpriteSheet01_26
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 13}
+        - {x: -11, y: 9}
+        - {x: -11, y: -9}
+        - {x: -10, y: -13}
+        - {x: -8, y: -15}
+        - {x: -1, y: -15}
+        - {x: 7, y: -13}
+        - {x: 11, y: -11}
+        - {x: 11, y: 9}
+        - {x: 6, y: 13}
+    - name: PotSmasherWalkingSpriteSheet01_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 14}
+        - {x: -5, y: 14}
+        - {x: -11, y: 5}
+        - {x: -11, y: -3}
+        - {x: -8, y: -13}
+        - {x: -5, y: -15}
+        - {x: 2, y: -15}
+        - {x: 10, y: -7}
+        - {x: 11, y: -5}
+        - {x: 11, y: 7}
+    - name: PotSmasherWalkingSpriteSheet01_28
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 15}
+        - {x: 2, y: 15}
+        - {x: -2, y: 13}
+        - {x: -11, y: 8}
+        - {x: -11, y: -3}
+        - {x: -10, y: -15}
+        - {x: -8, y: -16}
+        - {x: 6, y: -16}
+        - {x: 9, y: -14}
+        - {x: 11, y: -3}
+        - {x: 11, y: 9}
+    - name: PotSmasherWalkingSpriteSheet01_29
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: -11, y: 9}
+        - {x: -11, y: -6}
+        - {x: -7, y: -15}
+        - {x: 0, y: -15}
+        - {x: 11, y: -8}
+        - {x: 11, y: 7}
+        - {x: 5, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_30
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -11, y: 11}
+        - {x: -11, y: -2}
+        - {x: -6, y: -10}
+        - {x: -4, y: -14}
+        - {x: 13, y: -14}
+        - {x: 13, y: 13}
+        - {x: 8, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_31
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 15}
+        - {x: -11, y: 13}
+        - {x: -11, y: -10}
+        - {x: -8, y: -14}
+        - {x: 13, y: -14}
+        - {x: 13, y: 15}
+    - name: PotSmasherWalkingSpriteSheet01_32
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -12, y: 6}
+        - {x: -12, y: -8}
+        - {x: -10, y: -15}
+        - {x: 13, y: -15}
+        - {x: 13, y: 11}
+        - {x: 9, y: 13}
+    - name: PotSmasherWalkingSpriteSheet01_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 14}
+        - {x: -10, y: 11}
+        - {x: -10, y: -1}
+        - {x: -3, y: -15}
+        - {x: 12, y: -15}
+        - {x: 13, y: -10}
+        - {x: 13, y: 11}
+        - {x: 8, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_34
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 15}
+        - {x: 3, y: 15}
+        - {x: -4, y: 14}
+        - {x: -9, y: 7}
+        - {x: -9, y: 1}
+        - {x: -4, y: -9}
+        - {x: 4, y: -15}
+        - {x: 8, y: -15}
+        - {x: 11, y: -13}
+        - {x: 15, y: 2}
+        - {x: 15, y: 8}
+    - name: PotSmasherWalkingSpriteSheet01_35
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 16}
+        - {x: -11, y: 10}
+        - {x: -11, y: 3}
+        - {x: -7, y: -9}
+        - {x: -3, y: -14}
+        - {x: 13, y: -14}
+        - {x: 13, y: 12}
+        - {x: 8, y: 16}
+    - name: PotSmasherWalkingSpriteSheet01_36
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 14}
+        - {x: -12, y: 7}
+        - {x: -12, y: -4}
+        - {x: -4, y: -15}
+        - {x: 13, y: -15}
+        - {x: 13, y: 7}
+        - {x: 11, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 13}
+        - {x: -5, y: 13}
+        - {x: -10, y: 9}
+        - {x: -10, y: -10}
+        - {x: -8, y: -14}
+        - {x: 13, y: -14}
+        - {x: 16, y: -8}
+        - {x: 16, y: 1}
+        - {x: 13, y: 6}
+    - name: PotSmasherWalkingSpriteSheet01_38
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 14}
+        - {x: -11, y: 11}
+        - {x: -11, y: -1}
+        - {x: -3, y: -14}
+        - {x: 9, y: -14}
+        - {x: 13, y: -12}
+        - {x: 13, y: 9}
+        - {x: 12, y: 14}
+    - name: PotSmasherWalkingSpriteSheet01_39
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 15}
+        - {x: -4, y: 14}
+        - {x: -9, y: 9}
+        - {x: -9, y: -1}
+        - {x: 0, y: -15}
+        - {x: 12, y: -15}
+        - {x: 15, y: -5}
+        - {x: 15, y: 11}
+        - {x: 9, y: 15}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,12 +1,9 @@
 fileFormatVersion: 2
-guid: f01b89a8d28764f49940942148ac13cd
-timeCreated: 1454095682
+guid: b4ed0ea0cf20e284fbefdadbc0162224
+timeCreated: 1454110743
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: PotSmasherPlaceholderSpriteSheet01_0
-    21300002: PotSmasherPlaceholderSpriteSheet01_1
-    21300004: PotSmasherPlaceholderSpriteSheet01_2
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -41,7 +38,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,40 +49,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: PotSmasherPlaceholderSpriteSheet01_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 25.333334
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: PotSmasherPlaceholderSpriteSheet01_1
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 0
-        width: 25.333334
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: PotSmasherPlaceholderSpriteSheet01_2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 0
-        width: 25.333334
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
