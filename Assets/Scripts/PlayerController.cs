@@ -50,19 +50,24 @@ public class PlayerController : MonoBehaviour {
 
         if(thisVelocity.sqrMagnitude >= (walkCutOff * walkCutOff) && !attacking)
         {
-            animator.SetBool(walkingHash, true);
-            rigidbody.velocity = thisVelocity * walkSpeed * Time.fixedDeltaTime;
-            Direction moveDirection = GetDirection(thisVelocity);
-
-            if (moveDirection != currentDirection)
-            {
-                ChangeDirection(moveDirection);
-            }
+            Move(thisVelocity);
         }
         else
         {
             animator.SetBool(walkingHash, false);
             rigidbody.velocity = Vector2.zero;
+        }
+    }
+
+    public void Move(Vector2 moveVector)
+    {
+        animator.SetBool(walkingHash, true);
+        rigidbody.velocity = moveVector.normalized * walkSpeed;
+        Direction moveDirection = GetDirection(moveVector);
+
+        if (moveDirection != currentDirection)
+        {
+            ChangeDirection(moveDirection);
         }
     }
 
