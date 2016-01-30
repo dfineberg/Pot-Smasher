@@ -27,6 +27,16 @@ public class Weapon : MonoBehaviour {
         SortBehindPlayerEvent();
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        PS.Pot pot = col.GetComponent<PS.Pot>();
+
+        if(pot != null)
+        {
+            pot.Damage(damage);
+        }
+    }
+
     public virtual bool IsAttacking()
     {
         if(animator.GetCurrentAnimatorStateInfo(0).shortNameHash != idleHash)
