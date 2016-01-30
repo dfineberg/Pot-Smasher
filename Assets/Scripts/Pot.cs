@@ -14,9 +14,9 @@ namespace PS
 		}
 		
 		// Update is called once per frame
-		void Update () 
+		void OnMouseDown () 
 		{
-			if (Input.GetKeyDown(KeyCode.D)) Damage( 1 );
+			Damage( 1 );
 		}
 
 		public bool Damage( int damage )
@@ -25,6 +25,7 @@ namespace PS
 
 			if (HP <= 0)
 			{
+				HP = 0;
 				Break();
 				return true;
 			}
@@ -40,7 +41,7 @@ namespace PS
 
 		public virtual void Break() 
 		{
-			Destroy(this.gameObject);
+			this.gameObject.SetActive(false);
 		}
 	}
 }

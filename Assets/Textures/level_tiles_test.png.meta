@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 70069a415a4444c5c8e6c927c0dfc7ef
-timeCreated: 1454104718
+timeCreated: 1454105770
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -27,7 +27,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -39,18 +39,18 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: 4
   maxTextureSize: 256
   textureSettings:
     filterMode: 0
-    aniso: 16
+    aniso: 1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -64,7 +64,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 15
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -74,7 +74,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -84,8 +84,8 @@ TextureImporter:
     - name: level_tiles_test_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 17
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -95,8 +95,8 @@ TextureImporter:
     - name: level_tiles_test_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 34
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -106,8 +106,8 @@ TextureImporter:
     - name: level_tiles_test_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 51
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -117,8 +117,8 @@ TextureImporter:
     - name: level_tiles_test_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
+        x: 68
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -128,8 +128,8 @@ TextureImporter:
     - name: level_tiles_test_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
+        x: 85
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -139,8 +139,8 @@ TextureImporter:
     - name: level_tiles_test_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 16
+        x: 102
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -150,8 +150,8 @@ TextureImporter:
     - name: level_tiles_test_7
       rect:
         serializedVersion: 2
-        x: 112
-        y: 16
+        x: 119
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -161,8 +161,8 @@ TextureImporter:
     - name: level_tiles_test_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 16
+        x: 136
+        y: 17
         width: 16
         height: 16
       alignment: 0
@@ -172,8 +172,8 @@ TextureImporter:
     - name: level_tiles_test_9
       rect:
         serializedVersion: 2
-        x: 144
-        y: 16
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -183,7 +183,7 @@ TextureImporter:
     - name: level_tiles_test_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 17
         y: 0
         width: 16
         height: 16
@@ -194,7 +194,7 @@ TextureImporter:
     - name: level_tiles_test_11
       rect:
         serializedVersion: 2
-        x: 16
+        x: 34
         y: 0
         width: 16
         height: 16
@@ -205,7 +205,7 @@ TextureImporter:
     - name: level_tiles_test_12
       rect:
         serializedVersion: 2
-        x: 32
+        x: 51
         y: 0
         width: 16
         height: 16
@@ -216,7 +216,7 @@ TextureImporter:
     - name: level_tiles_test_13
       rect:
         serializedVersion: 2
-        x: 48
+        x: 68
         y: 0
         width: 16
         height: 16
@@ -227,7 +227,7 @@ TextureImporter:
     - name: level_tiles_test_14
       rect:
         serializedVersion: 2
-        x: 64
+        x: 85
         y: 0
         width: 16
         height: 16
@@ -238,7 +238,7 @@ TextureImporter:
     - name: level_tiles_test_15
       rect:
         serializedVersion: 2
-        x: 80
+        x: 102
         y: 0
         width: 16
         height: 16
@@ -249,7 +249,7 @@ TextureImporter:
     - name: level_tiles_test_16
       rect:
         serializedVersion: 2
-        x: 96
+        x: 119
         y: 0
         width: 16
         height: 16
@@ -260,29 +260,7 @@ TextureImporter:
     - name: level_tiles_test_17
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: level_tiles_test_18
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: level_tiles_test_19
-      rect:
-        serializedVersion: 2
-        x: 144
+        x: 136
         y: 0
         width: 16
         height: 16
