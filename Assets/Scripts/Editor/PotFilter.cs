@@ -1,15 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class PotFilter : MonoBehaviour {
+using UnityEditor;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+namespace PS
+{
+	public class PotFilter : MonoBehaviour {
+
+		// add menu item named "Filter Pots" to the Tools menu
+		[MenuItem("Tools/Build Level")]
+		public static void ShowWindow()
+		{
+			BuildLevel();
+		}
+
+		static void BuildLevel()
+		{
+			Level level = (Level)GameObject.FindObjectOfType<Level>();
+			level.pots = new List<Pot>();
+
+			SpriteRenderer[] spriteObjects = GameObject.FindObjectsOfType<SpriteRenderer>();
+			foreach ( SpriteRenderer s in spriteObjects )
+			{
+				if (s.gameObject.tag == "Pot")
+				{
+					Pot pot = s.gameObject.GetComponent<Pot>();
+					if (!pot)
+					{
+						s.gameObject.AddComponent<Pot>();
+						pot = s.gameObject.GetComponent<Pot>();
+					}
+
+					level.pots.Add(pot);
+				}
+					
+			}
+
+			level.Save();
+		}
 	}
 }
