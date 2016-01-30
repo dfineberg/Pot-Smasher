@@ -41,13 +41,14 @@ namespace PS
 
 		public virtual void Break() 
 		{
-			this.gameObject.SetActive(false);
+            BreakImmediately();
 		}
 
 		public virtual void BreakImmediately()
 		{
 			Debug.Log("Break Immediate Pot");
-			this.gameObject.SetActive(false);
+            GetComponent<SpriteRenderer>().sprite = PotSmasher.instance.smashSprite;
+            GetComponent<Collider2D>().enabled = false;
 		}
 	}
 }
