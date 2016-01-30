@@ -21,17 +21,15 @@ namespace PS
 	{
 		public int levelNumber;
 		public List<Pot> pots;
+		public List<Door> doors;
 
 		// Use this for initialization
-		void Start () {
-
-			Load();
-		
+		void Start ()
+		{
 		}
 
 		void OnDestroy()
 		{
-			Save();
 		}
 		
 		// Update is called once per frame
@@ -41,6 +39,7 @@ namespace PS
 
 		public void Load()
 		{
+			Debug.Log("Loading Level " + levelNumber);
 			BinaryFormatter bf = new BinaryFormatter(); 
 			FileStream file = File.Open(Application.persistentDataPath + "/level" + levelNumber + ".dat", FileMode.Open );
 
@@ -50,14 +49,16 @@ namespace PS
 			int len = potdata.Length;
 			for ( int i = 0; i < len; i++ )
 			{
-				if (potdata[i].HP == 0) pots[i].BreakImmediately();
+				pots[i].HP = potdata[i].HP;
+				if (pots[i].HP == 0) pots[i].BreakImmediately(); //.gameObject.SetActive(false);//
 			}
 		}
 
 		public void Save()
 		{
+			Debug.Log("Saving Level " + levelNumber);
 			BinaryFormatter bf = new BinaryFormatter(); 
-			FileStream file = File.Create(Application.persistentDataPath + "/level" + levelNumber + ".dat");//, FileOptions.RandomAccess);
+			FileStream file = File.Create(Application.persistentDataPath + "/level" + levelNumber + ".dat");
 
 			PotData[] potdata = new PotData[pots.Count];
 			for ( int i = 0; i < pots.Count; i++ )

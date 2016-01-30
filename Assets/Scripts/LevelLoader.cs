@@ -27,14 +27,31 @@ namespace PS
 
 		void Start ()
 		{
+			Reset();
 			visitedLevels = new List<int>();
 			LoadLevelResource(1);
 			StartCoroutine(FadeToLevel());
 		}
 
+		void Reset ()
+		{
+			for (int i = 1; i < 999; ++i )
+			{
+				//("fontname",typeof(Font)) as Font;
+				GameObject level = Resources.Load(i.ToString(),typeof(GameObject)) as GameObject;
+				Debug.Log("Found Level " + i);
+				if (level)
+				{
+					level.GetComponent<Level>().Save();
+				}
+				else break;
+			}
+		}
+
 		public void LoadLevel(int levelNumber)
 		{
 			if (loading) return;
+			loading = true;
 			StartCoroutine(LoadLevelSequence(levelNumber));
 		}
 
@@ -93,17 +110,19 @@ namespace PS
 		void LoadLevelResource(int levelNumber)
 		{
 			// load the level resource and get the level object
-			Resources.Load(levelNumber.ToString());
+			GameObject level = (GameObject)Instantiate(Resources.Load(levelNumber.ToString()));
 
 			// delete the current level if it exists
 			if (currentLevel != null)
 			{
-				DestroyImmediate(currentLevel.gameObject);
+				currentLevel.Save();
+				Destroy(currentLevel.gameObject);
 				currentLevel = null;
 			}
 		
 			// set the current level as the new level
-			currentLevel = GameObject.FindObjectOfType<Level>();
+			currentLevel = level.GetComponent<Level>();
+			currentLevel.Load();
 		}
 
 		IEnumerator LoadLevelSequence(int levelNumber)
