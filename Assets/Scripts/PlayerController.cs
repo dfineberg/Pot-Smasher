@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour {
     
     Direction currentDirection = Direction.down;
 
+    public Weapon weapon;
+    bool attacking = false;
+    bool attackAnimFinish = false;
+
     public float walkSpeed;
     float walkCutOff = 0.5f;
     Rigidbody2D rigidbody;
@@ -32,11 +36,19 @@ public class PlayerController : MonoBehaviour {
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && !attacking)
+        {
+            StartCoroutine(AttackRoutine());
+        }
+    }
+
     void FixedUpdate()
     {
         Vector2 thisVelocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
-        if(thisVelocity.sqrMagnitude >= (walkCutOff * walkCutOff))
+        if(thisVelocity.sqrMagnitude >= (walkCutOff * walkCutOff) && !attacking)
         {
             animator.SetBool(walkingHash, true);
             rigidbody.velocity = thisVelocity * walkSpeed * Time.fixedDeltaTime;
@@ -52,6 +64,47 @@ public class PlayerController : MonoBehaviour {
             animator.SetBool(walkingHash, false);
             rigidbody.velocity = Vector2.zero;
         }
+    }
+
+    IEnumerator AttackRoutine()
+    {
+        weapon.Attack(currentDirection);
+        animator.SetTrigger(attackHash);
+        attacking = true;
+
+        while (attacking)
+        {
+            if (attackAnimFinish)
+            {
+                if(weapon != null)
+                {
+                    if (weapon.WaitWhileAttacking())
+                    {
+                        if (!weapon.IsAttacking())
+                        {
+                            attacking = false;
+                        }
+                    }
+                    else
+                    {
+                        attacking = false;
+                    }
+                }
+                else
+                {
+                    attacking = false;
+                }
+            }
+
+            yield return null;
+        }
+
+        attackAnimFinish = false;
+    }
+
+    public void EndAttackAnimEvent()
+    {
+        attackAnimFinish = true;
     }
 
     Direction GetDirection(Vector2 v)

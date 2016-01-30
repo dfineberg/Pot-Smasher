@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Animator))]
 public class Weapon : MonoBehaviour {
 
     public int damage;
 
+    SpriteRenderer spriteRenderer;
     Animator animator;
     int downHash;
     int leftHash;
@@ -14,12 +16,25 @@ public class Weapon : MonoBehaviour {
 
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         downHash = Animator.StringToHash("Down");
         leftHash = Animator.StringToHash("Left");
         rightHash = Animator.StringToHash("Right");
         upHash = Animator.StringToHash("Up");
         idleHash = Animator.StringToHash("Idle");
+
+        SortBehindPlayerEvent();
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        PS.Pot pot = col.GetComponent<PS.Pot>();
+
+        if(pot != null)
+        {
+            pot.Damage(damage);
+        }
     }
 
     public virtual bool IsAttacking()
@@ -59,5 +74,15 @@ public class Weapon : MonoBehaviour {
                 animator.SetTrigger(leftHash);
                 break;
         }
+    }
+
+    public void SortInFrontOfPlayerEvent()
+    {
+        spriteRenderer.sortingOrder = 1;
+    }
+
+    public void SortBehindPlayerEvent()
+    {
+        spriteRenderer.sortingOrder = -1;
     }
 }
