@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pot
   - Door
+  - Gem
   layers:
   - Default
   - TransparentFX
