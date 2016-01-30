@@ -50,7 +50,7 @@ namespace PS
 			int len = potdata.Length;
 			for ( int i = 0; i < len; i++ )
 			{
-				if (potdata[i].HP == 0) pots[i].gameObject.SetActive(false);
+				if (potdata[i].HP == 0) pots[i].BreakImmediately();
 			}
 		}
 

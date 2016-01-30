@@ -43,5 +43,10 @@ namespace PS
 		{
 			this.gameObject.SetActive(false);
 		}
+
+		public virtual void BreakImmediately()
+		{
+			this.gameObject.SetActive(false);
+		}
 	}
 }
