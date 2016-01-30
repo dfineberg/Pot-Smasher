@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     Direction currentDirection = Direction.down;
 
     public Weapon weapon;
+    public bool disableUserInput = false;
     bool attacking = false, attackAnimFinish = false;
 
     public float walkSpeed, walkCutOff = 0.5f;
@@ -51,16 +52,19 @@ public class PlayerController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        Vector2 thisVelocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+        if (!disableUserInput)
+        {
+            Vector2 thisVelocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
-        if(thisVelocity.sqrMagnitude >= (walkCutOff * walkCutOff) && !attacking && !LevelUpPlaying())
-        {
-            Move(thisVelocity);
-        }
-        else
-        {
-            animator.SetBool(walkingHash, false);
-            rigidbody.velocity = Vector2.zero;
+            if (thisVelocity.sqrMagnitude >= (walkCutOff * walkCutOff) && !attacking && !LevelUpPlaying())
+            {
+                Move(thisVelocity);
+            }
+            else
+            {
+                animator.SetBool(walkingHash, false);
+                rigidbody.velocity = Vector2.zero;
+            }
         }
     }
 
