@@ -6,11 +6,13 @@ namespace PS
 	public class Pot : MonoBehaviour {
 
 		public int HP;
+        public float gemChance;
 
 		// Use this for initialization
-		void Start () 
+		void OnEnable () 
 		{
-			HP = 5;
+			HP = 1;
+            gemChance = 0.6f;
 		}
 		
 		// Update is called once per frame
@@ -41,13 +43,16 @@ namespace PS
 
 		public virtual void Break() 
 		{
-			this.gameObject.SetActive(false);
+            if (Random.value <= gemChance) Instantiate(PotSmasher.instance.gemPrefab, transform.position, Quaternion.identity);
+            Instantiate(PotSmasher.instance.smashParticles, transform.position, Quaternion.identity);
+            BreakImmediately();
 		}
 
 		public virtual void BreakImmediately()
 		{
 			Debug.Log("Break Immediate Pot");
-			this.gameObject.SetActive(false);
+            GetComponent<SpriteRenderer>().sprite = PotSmasher.instance.smashSprite;
+            GetComponent<Collider2D>().enabled = false;
 		}
 	}
 }
