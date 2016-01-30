@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
     bool attacking = false, attackAnimFinish = false;
 
     public float walkSpeed, walkCutOff = 0.5f;
-    Rigidbody2D rigidbody;
+    new Rigidbody2D rigidbody;
 
     public int gemsToLevelUp;
     int currentLevel = 0, currentXP;
