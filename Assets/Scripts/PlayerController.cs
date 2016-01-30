@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour {
 
     IEnumerator AttackRoutine()
     {
+        weapon.Attack(currentDirection);
         animator.SetTrigger(attackHash);
         attacking = true;
 
