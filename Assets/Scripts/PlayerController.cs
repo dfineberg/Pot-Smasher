@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     new Rigidbody2D rigidbody;
 
     public int gemsToLevelUp;
+    public int gemsIncreasePerLevel;
     int currentLevel = 0, currentXP;
     public GameObject[] weapons;
 
@@ -89,9 +90,10 @@ public class PlayerController : MonoBehaviour {
         currentDirection = Direction.down;
         currentXP = 0;
         currentLevel++;
+        gemsToLevelUp += gemsIncreasePerLevel;
         attacking = false;
 
-        if (currentLevel < weapons.Length)
+        if (currentLevel <= weapons.Length)
         {
             GameObject newWeapon = (GameObject)Instantiate(weapons[currentLevel - 1]);
             newWeapon.transform.SetParent(transform);
