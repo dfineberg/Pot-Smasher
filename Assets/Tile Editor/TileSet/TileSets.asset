@@ -25,7 +25,7 @@ MonoBehaviour:
   - Name: Set
     TileList:
     - Sprite: {fileID: 21300000, guid: 70069a415a4444c5c8e6c927c0dfc7ef, type: 3}
-      Collision: 0
+      Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
       Rotation: 0
@@ -66,18 +66,18 @@ MonoBehaviour:
       IsTrigger: 0
       Rotation: 90
       FlipHorizontally: 0
-      FlipVertically: 0
+      FlipVertically: 1
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300010, guid: 70069a415a4444c5c8e6c927c0dfc7ef, type: 3}
       Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 1
-      Rotation: 270
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
-      Tag: Door
+      Tag: Exit
     - Sprite: {fileID: 21300012, guid: 70069a415a4444c5c8e6c927c0dfc7ef, type: 3}
       Collision: 1
       PhysicsMaterial: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
       IsTrigger: 0
       Rotation: 90
       FlipHorizontally: 0
-      FlipVertically: 0
+      FlipVertically: 1
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300030, guid: 70069a415a4444c5c8e6c927c0dfc7ef, type: 3}
@@ -165,7 +165,7 @@ MonoBehaviour:
       IsTrigger: 0
       Rotation: 90
       FlipHorizontally: 0
-      FlipVertically: 0
+      FlipVertically: 1
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300032, guid: 70069a415a4444c5c8e6c927c0dfc7ef, type: 3}
@@ -184,7 +184,7 @@ MonoBehaviour:
       Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
-      OrderInLayer: -1
+      OrderInLayer: 1
       Tag: Untagged
     - Sprite: {fileID: 21300000, guid: 43f9221d62740482ab009a023489b328, type: 3}
       Collision: 3
@@ -193,5 +193,5 @@ MonoBehaviour:
       Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
-      OrderInLayer: 0
+      OrderInLayer: 10
       Tag: Pot

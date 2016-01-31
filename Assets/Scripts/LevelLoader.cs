@@ -12,7 +12,6 @@ namespace PS
 		public SpriteRenderer fadeSprite;
 		public float fadeSpeed = 1.0f;
 
-		List<int>visitedLevels;
 		bool loading = false;
 		Level currentLevel = null;
 
@@ -29,27 +28,33 @@ namespace PS
 		void Start ()
 		{
 			Reset();
-			visitedLevels = new List<int>();
 			LoadLevelResource(currentLevelNumber);
 			StartCoroutine(FadeToLevel());
 		}
 
-		void Reset ()
+		void Reset()
 		{
+			Debug.Log("Resetting Levels");
 			for (int i = 1; i < 999; ++i )
 			{
 				//("fontname",typeof(Font)) as Font;
 				GameObject level = Resources.Load(i.ToString(),typeof(GameObject)) as GameObject;
 
-				if (level)
+				if (level != null)
 				{
-					//Debug.Log("Found Level " + i);
 					level.GetComponent<Level>().Save();
 				}
-				else break;
+
+
+				else 
+				{
+					Debug.Log("No Level " + i + "to Reset");
+					break;
+				}
 			}
 		}
 
+		/*
 		void ResetVisited ()
 		{
 			foreach (int levelNumber in visitedLevels)
@@ -64,6 +69,7 @@ namespace PS
 				else break;
 			}
 		}
+		*/
 
 		public void LoadLevel(int levelNumber)
 		{
@@ -126,6 +132,8 @@ namespace PS
 
 		void LoadLevelResource(int levelNumber)
 		{
+			currentLevelNumber = levelNumber;
+
 			// load the level resource and get the level object
 			GameObject level = (GameObject)Instantiate(Resources.Load(levelNumber.ToString()));
 			if (level == null)
@@ -133,7 +141,6 @@ namespace PS
 				Debug.Log("Could not load level " + levelNumber + " from Resources folder");
 				return;
 			}
-			visitedLevels.Add(levelNumber);
 
 			// delete the current level if it exists
 			if (currentLevel != null)
@@ -145,11 +152,12 @@ namespace PS
 		
 			// set the current level as the new level
 			currentLevel = level.GetComponent<Level>();
-			currentLevel.Load();
+			//currentLevel.Load();
 		}
 
 		IEnumerator LoadLevelSequence(int levelNumber)
 		{
+			Debug.Log("Loading level " + levelNumber);
 
 			// fade screen to black
 			yield return StartCoroutine(FadeToBlack());
