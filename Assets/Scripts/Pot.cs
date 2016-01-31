@@ -9,11 +9,13 @@ namespace PS
         public float gemChance;
 
 		// Use this for initialization
+		/*
 		void Reset () 
 		{
 			HP = 5;
             gemChance = 0.6f;
 		}
+		*/
 		
 		// Update is called once per frame
 		void OnMouseDown () 
@@ -66,7 +68,11 @@ namespace PS
 
 		public virtual void Break() 
 		{
-            if (Random.value <= gemChance) Instantiate(PotSmasher.instance.gemPrefab, transform.position, Quaternion.identity);
+			if (Random.value <= gemChance) 
+			{
+				GameObject gem = (GameObject)Instantiate(PotSmasher.instance.gemPrefab, transform.position, Quaternion.identity);
+				gem.transform.SetParent(transform);
+			}
             Instantiate(PotSmasher.instance.smashParticles, transform.position, Quaternion.identity);
             BreakImmediately();
 		}

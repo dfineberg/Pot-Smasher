@@ -177,7 +177,7 @@ namespace PS
 			DestroyImmediate(levelCopy.GetComponent<TileEditor.TileMap>());
 
 			level.transform.name = level.levelNumber.ToString();
-			level.Save();
+			//level.Save();
 		}
 
 	}
