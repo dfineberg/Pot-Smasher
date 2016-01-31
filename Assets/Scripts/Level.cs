@@ -23,6 +23,7 @@ namespace PS
 	{
 		static List<int> vistedLevels = new List<int>();
 		static int PrevLevel = 0;
+		public static Level Instance {private set;get;}
 
 		static void ResetVisitedLevels()
 		{
@@ -37,13 +38,24 @@ namespace PS
 		// Use this for initialization
 		void Awake()
 		{
+			Instance = this;
 			//if (exit != null) PlayerController.instance.transform.position = exit.transform.position;
 		}
 
 		void Start()
 		{
-			if (PrevLevel < levelNumber) PlayerController.instance.transform.position = entrance.transform.position;
-			else if (PrevLevel > levelNumber) PlayerController.instance.transform.position = exit.transform.position;
+			if (PrevLevel < levelNumber)
+			{
+				Vector3 levelOffset = PlayerController.instance.transform.position - entrance.transform.position;
+				transform.position += new Vector3(levelOffset.x, levelOffset.y, 0);
+				//PlayerController.instance.transform.position = entrance.transform.position;
+			}
+			else if (PrevLevel > levelNumber) 
+			{
+				Vector3 levelOffset = PlayerController.instance.transform.position - exit.transform.position;
+				transform.position += new Vector3(levelOffset.x, levelOffset.y, 0);
+				//PlayerController.instance.transform.position = exit.transform.position;
+			}
 			//if (entrance != null) PlayerController.instance.transform.position = entrance.transform.position;
 			//else if (Level0Visited) PlayerController.instance.transform.position = exit.transform.position;
 			//else { Level0Visited = true; }

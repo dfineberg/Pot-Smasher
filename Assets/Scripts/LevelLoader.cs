@@ -136,14 +136,6 @@ namespace PS
 		{
 			currentLevelNumber = levelNumber;
 
-			// load the level resource and get the level object
-			GameObject level = (GameObject)Instantiate(Resources.Load(levelNumber.ToString()));
-			if (level == null)
-			{
-				Debug.Log("Could not load level " + levelNumber + " from Resources folder");
-				return;
-			}
-
 			// delete the current level if it exists
 			if (currentLevel != null)
 			{
@@ -151,10 +143,17 @@ namespace PS
 				Destroy(currentLevel.gameObject);
 				currentLevel = null;
 			}
+
+			// load the level resource and get the level object
+			GameObject level = (GameObject)Instantiate(Resources.Load(levelNumber.ToString()));
+			if (level == null)
+			{
+				Debug.Log("Could not load level " + levelNumber + " from Resources folder");
+				return;
+			}
 		
 			// set the current level as the new level
 			currentLevel = level.GetComponent<Level>();
-			//currentLevel.Load();
 		}
 
 		IEnumerator LoadLevelSequence(int levelNumber)
