@@ -83,11 +83,17 @@ public class Weapon : MonoBehaviour {
 
     public void SortInFrontOfPlayerEvent()
     {
-        spriteRenderer.sortingOrder = 1;
+        if(spriteRenderer)
+        {
+            spriteRenderer.sortingOrder = 1;
+        }
     }
 
     public void SortBehindPlayerEvent()
     {
-        spriteRenderer.sortingOrder = -1;
+        if (spriteRenderer)
+        {
+            spriteRenderer.sortingOrder = -1;
+        }
     }
 }
