@@ -7,7 +7,17 @@ namespace PS
 	public enum SOUND_ID
 	{
 		GEM_1,
-		POT_BREAK_1
+		POT_BREAK_1,
+		POWER_UP_1,
+		POWER_UP_2,
+		POWER_UP_3,
+		ENTER_ROOM_1,
+		ENTER_ROOM_2,
+		ENTER_ROOM_3,
+		SCYTHE_1,
+		SCYTHE_2,
+		SWORD_1,
+		BOOMERANG_1
 	}
 
 	public class SoundController : MonoBehaviour 

@@ -85,6 +85,8 @@ public class PlayerController : MonoBehaviour {
 
     public void LevelUp()
     {
+		PS.SoundController.Instance.PlaySound(PS.SOUND_ID.POWER_UP_1);
+		PS.SoundController.Instance.PlaySound(PS.SOUND_ID.POWER_UP_2);
         animator.SetTrigger(levelUpHash);
         weapon.StopAttacking();
         attackAnimFinish = false;

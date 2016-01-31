@@ -23,6 +23,7 @@ public class Boomerang : Weapon {
         if (!IsAttacking())
         {
             StartCoroutine(AttackRoutine(attackDir));
+			PS.SoundController.Instance.PlaySound(PS.SOUND_ID.BOOMERANG_1);
         }
     }
 
