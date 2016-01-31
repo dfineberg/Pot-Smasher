@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     new Rigidbody2D rigidbody;
 
     public int gemsToLevelUp;
+    public int gemsIncreasePerLevel;
     int currentLevel = 0, currentXP;
     public GameObject[] weapons;
 
@@ -44,8 +45,9 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && !attacking)
+        if(Input.GetKeyDown(KeyCode.Space) && !attacking && !LevelUpPlaying())
         {
+            attackAnimFinish = false;
             StartCoroutine(AttackRoutine());
         }
     }
@@ -83,9 +85,15 @@ public class PlayerController : MonoBehaviour {
     public void LevelUp()
     {
         animator.SetTrigger(levelUpHash);
+        weapon.StopAttacking();
+        attackAnimFinish = false;
+        currentDirection = Direction.down;
         currentXP = 0;
         currentLevel++;
-        if (currentLevel < weapons.Length)
+        gemsToLevelUp += gemsIncreasePerLevel;
+        attacking = false;
+
+        if (currentLevel <= weapons.Length)
         {
             GameObject newWeapon = (GameObject)Instantiate(weapons[currentLevel - 1]);
             newWeapon.transform.SetParent(transform);

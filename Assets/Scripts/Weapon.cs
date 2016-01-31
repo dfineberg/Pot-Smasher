@@ -6,15 +6,15 @@ public class Weapon : MonoBehaviour {
 
     public int damage;
 
-    SpriteRenderer spriteRenderer;
-    Animator animator;
+    protected SpriteRenderer spriteRenderer;
+    protected Animator animator;
     int downHash;
     int leftHash;
     int rightHash;
     int upHash;
     int idleHash;
 
-    void Start()
+    protected virtual void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour {
         SortBehindPlayerEvent();
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    protected virtual void OnTriggerEnter2D(Collider2D col)
     {
         PS.Pot pot = col.GetComponent<PS.Pot>();
 
@@ -74,6 +74,11 @@ public class Weapon : MonoBehaviour {
                 animator.SetTrigger(leftHash);
                 break;
         }
+    }
+
+    public virtual void StopAttacking()
+    {
+        if (IsAttacking() && animator) animator.SetTrigger(idleHash);
     }
 
     public void SortInFrontOfPlayerEvent()
