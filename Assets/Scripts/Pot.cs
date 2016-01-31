@@ -9,11 +9,13 @@ namespace PS
         public float gemChance;
 
 		// Use this for initialization
+		/*
 		void Reset () 
 		{
 			HP = 5;
             gemChance = 0.6f;
 		}
+		*/
 		
 		// Update is called once per frame
 		void OnMouseDown () 

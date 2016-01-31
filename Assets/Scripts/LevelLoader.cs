@@ -27,11 +27,12 @@ namespace PS
 
 		void Start ()
 		{
-			Reset();
+			//Reset();
 			LoadLevelResource(currentLevelNumber);
 			StartCoroutine(FadeToLevel());
 		}
 
+		/*
 		void Reset()
 		{
 			Debug.Log("Resetting Levels");
@@ -53,6 +54,7 @@ namespace PS
 				}
 			}
 		}
+		*/
 
 		/*
 		void ResetVisited ()
