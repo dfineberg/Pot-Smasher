@@ -1467,7 +1467,7 @@ GameObject:
   - 4: {fileID: 485856}
   - 114: {fileID: 11493778}
   m_Layer: 0
-  m_Name: 0
+  m_Name: 100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3372,7 +3372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 905dfe7542f56437d88756e8b119ebee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 1
+  levelNumber: 101
 --- !u!114 &11431846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6208,7 +6208,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: levelNumber
+      value: 101
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197634}

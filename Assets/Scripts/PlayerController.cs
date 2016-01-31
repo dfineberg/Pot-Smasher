@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour {
 
     void CollectGem(GameObject gem)
     {
+		PS.SoundController.Instance.PlaySound(PS.SOUND_ID.GEM_1);
         Destroy(gem);
         currentXP++;
         if (e_gemGet != null) e_gemGet(currentXP, gemsToLevelUp);
