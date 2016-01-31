@@ -70,10 +70,12 @@ namespace PS
 
 		void InitialisePots()
 		{
+			UnityEngine.Random.seed = System.DateTime.Now.Millisecond;
+
 			foreach (Pot pot in pots)
 			{
-				pot.HP = levelNumber + 1;
-				pot.gemChance = 1.0f;
+				pot.HP = 1;//levelNumber + 1;
+				pot.gemChance = UnityEngine.Random.value/ (levelNumber+2);// * 2);
 			}
 		}
 
@@ -102,6 +104,7 @@ namespace PS
 			for ( int i = 0; i < len; i++ )
 			{
 				pots[i].HP = potdata[i].HP;
+				pots[i].gemChance = potdata[i].gemChance;
 				if (pots[i].HP == 0) pots[i].BreakImmediately(); //.gameObject.SetActive(false);//
 			}
 		}
@@ -118,8 +121,9 @@ namespace PS
 			PotData[] potdata = new PotData[pots.Count];
 			for ( int i = 0; i < pots.Count; i++ )
 			{
-				potdata[i] = new PotData();
-				potdata[i].HP = pots[i].HP;
+				potdata[i] = new PotData(pots[i].HP,pots[i].gemChance);
+				//potdata[i].HP = pots[i].HP;
+				//potdata[i].gemChance = pots[i].gemChance;
 			}
 
 			bf.Serialize( file, potdata );
