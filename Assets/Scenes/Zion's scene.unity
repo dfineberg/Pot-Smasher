@@ -3980,6 +3980,18 @@ Prefab:
       propertyPath: currentLevelNumber
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11495764, guid: fc75dcc7b5379416ca8424f3fe81c44b, type: 2}
+      propertyPath: shakeForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495764, guid: fc75dcc7b5379416ca8424f3fe81c44b, type: 2}
+      propertyPath: returnSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495764, guid: fc75dcc7b5379416ca8424f3fe81c44b, type: 2}
+      propertyPath: maxOffset
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc75dcc7b5379416ca8424f3fe81c44b, type: 2}
   m_IsPrefabParent: 0
