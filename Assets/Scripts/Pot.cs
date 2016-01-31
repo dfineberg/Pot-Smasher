@@ -68,7 +68,9 @@ namespace PS
 
 		public virtual void Break() 
 		{
-			if (Random.value <= gemChance) 
+			float rand = Random.value;
+			//Debug.Log (rand + " " + gemChance);
+			if (rand <= gemChance) 
 			{
 				GameObject gem = (GameObject)Instantiate(PotSmasher.instance.gemPrefab, transform.position, Quaternion.identity);
 				gem.transform.SetParent(transform);

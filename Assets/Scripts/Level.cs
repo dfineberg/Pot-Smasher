@@ -75,6 +75,7 @@ namespace PS
 
 			if (!found)
 			{
+				Debug.Log ("Initialising Pots");
 				vistedLevels.Add(levelNumber);
 				InitialisePots();
 			}
