@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SwordAnimator
+  m_Name: BiggerSwordAnimator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Up
@@ -274,7 +274,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d59f64177ce60cc4092b50a0b11a20d8, type: 2}
+  m_Motion: {fileID: 7400000, guid: 09dba961fd1b39244ae42818160df1f4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -298,7 +298,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3751765a8a6dba04482f6587ced0c4f7, type: 2}
+  m_Motion: {fileID: 7400000, guid: e8b81c012ad1c314ca5eec872ba198a2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -322,7 +322,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0a94dccb98069d44cb7b27004a4923cf, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9e533b934b539fa48afdf2bfea187815, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -373,7 +373,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 80d77a39f129bae45baeccc80ef7f905, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8b82c3e36ca91a34a9ace1ddf1b5922a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
