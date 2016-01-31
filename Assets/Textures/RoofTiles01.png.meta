@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 99f933ff8822749d4844cccab6a3340f
-timeCreated: 1454243532
+guid: 2683ab104908f4f899c19f35b3d636ef
+timeCreated: 1454243769
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: FloorTiles03_0
-    21300002: FloorTiles03_1
-    21300004: FloorTiles03_2
-    21300006: FloorTiles03_3
-    21300008: FloorTiles03_4
-    21300010: FloorTiles03_5
+    21300000: RoofTiles01_0
+    21300002: RoofTiles01_1
+    21300004: RoofTiles01_2
+    21300006: RoofTiles01_3
+    21300008: RoofTiles01_4
+    21300010: RoofTiles01_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,7 +56,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: FloorTiles03_0
+    - name: RoofTiles01_0
       rect:
         serializedVersion: 2
         x: 0
@@ -67,7 +67,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: FloorTiles03_1
+    - name: RoofTiles01_1
       rect:
         serializedVersion: 2
         x: 16
@@ -78,7 +78,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: FloorTiles03_2
+    - name: RoofTiles01_2
       rect:
         serializedVersion: 2
         x: 0
@@ -89,7 +89,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: FloorTiles03_3
+    - name: RoofTiles01_3
       rect:
         serializedVersion: 2
         x: 16
@@ -100,7 +100,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: FloorTiles03_4
+    - name: RoofTiles01_4
       rect:
         serializedVersion: 2
         x: 0
@@ -111,7 +111,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: FloorTiles03_5
+    - name: RoofTiles01_5
       rect:
         serializedVersion: 2
         x: 16
