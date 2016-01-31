@@ -195,3 +195,5 @@ MonoBehaviour:
       FlipVertically: 0
       OrderInLayer: 10
       Tag: Pot
+  - Name: Set
+    TileList: []
