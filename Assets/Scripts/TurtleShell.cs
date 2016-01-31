@@ -8,7 +8,7 @@ public class TurtleShell : MonoBehaviour {
     public int damage;
 
     Direction currentDir;
-    Rigidbody2D rigidbody;
+    public Rigidbody2D rigidbody;
     float startTime;
 
     void Start()
@@ -25,6 +25,25 @@ public class TurtleShell : MonoBehaviour {
     public void SetDirection(Direction newDir)
     {
         currentDir = newDir;
+
+        switch (newDir)
+        {
+            case Direction.up:
+                rigidbody.AddForce(Vector2.up * moveSpeed, ForceMode2D.Impulse);
+                break;
+
+            case Direction.down:
+                rigidbody.AddForce(Vector2.down * moveSpeed, ForceMode2D.Impulse);
+                break;
+
+            case Direction.left:
+                rigidbody.AddForce(Vector2.left * moveSpeed, ForceMode2D.Impulse);
+                break;
+
+            case Direction.right:
+                rigidbody.AddForce(Vector2.right * moveSpeed, ForceMode2D.Impulse);
+                break;
+        }
     }
 
     void Update()
@@ -37,7 +56,7 @@ public class TurtleShell : MonoBehaviour {
 
     void FixedUpdate()
     {
-        switch (currentDir)
+        /*switch (currentDir)
         {
             case Direction.up:
                 rigidbody.MovePosition(rigidbody.position + Vector2.down * moveSpeed * Time.fixedDeltaTime);
@@ -54,16 +73,19 @@ public class TurtleShell : MonoBehaviour {
             case Direction.right:
                 rigidbody.MovePosition(rigidbody.position + Vector2.left * moveSpeed * Time.fixedDeltaTime);
                 break;
-        }
+        }*/
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.CompareTag("Pot"))
+        if (col.gameObject.CompareTag("Pot"))
         {
-            col.GetComponent<PS.Pot>().Damage(damage);
+            col.gameObject.GetComponent<PS.Pot>().Damage(damage);
         }
 
+        rigidbody.velocity = Vector2.Reflect(rigidbody.velocity, col.contacts[0].normal);
+
+        /*
         switch (currentDir)
         {
             case Direction.up:
@@ -82,5 +104,6 @@ public class TurtleShell : MonoBehaviour {
                 SetDirection(Direction.left);
                 break;
         }
+        */
     }
 }

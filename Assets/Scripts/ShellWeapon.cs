@@ -5,6 +5,7 @@ public class ShellWeapon : Weapon {
 
     public GameObject shellPrefab;
     public float throwDelay;
+    public float spawnOffset;
     bool attacking = false;
 
     public override bool IsAttacking()
@@ -14,7 +15,28 @@ public class ShellWeapon : Weapon {
 
     void Fire(Direction attackDir)
     {
-        GameObject newShell = (GameObject)Instantiate(shellPrefab, transform.position, Quaternion.identity);
+        Vector3 pos = transform.position;
+
+        switch (attackDir)
+        {
+            case Direction.up:
+                pos += Vector3.up * spawnOffset;
+                break;
+
+            case Direction.down:
+                pos += Vector3.down * spawnOffset;
+                break;
+
+            case Direction.left:
+                pos += Vector3.left * spawnOffset;
+                break;
+
+            case Direction.right:
+                pos += Vector3.right * spawnOffset;
+                break;
+        }
+
+        GameObject newShell = (GameObject)Instantiate(shellPrefab, pos, Quaternion.identity);
         TurtleShell shell = newShell.GetComponent<TurtleShell>();
         shell.SetDirection(attackDir);
         shell.SetDamage(damage);
