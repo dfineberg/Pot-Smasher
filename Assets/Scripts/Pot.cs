@@ -30,6 +30,7 @@ namespace PS
 			if (HP <= 0)
 			{
 				HP = 0;
+				SoundController.Instance.PlaySound(SOUND_ID.POT_BREAK_1);
 				Break();
 				return true;
 			}

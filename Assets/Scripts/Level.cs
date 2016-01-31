@@ -78,6 +78,8 @@ namespace PS
 				vistedLevels.Add(levelNumber);
 				InitialisePots();
 			}
+
+			PS.SoundController.Instance.PlaySound(PS.SOUND_ID.ENTER_ROOM_3);
 		}
 
 		void InitialisePots()

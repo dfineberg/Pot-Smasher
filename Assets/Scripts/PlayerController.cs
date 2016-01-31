@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour {
 
     void CollectGem(GameObject gem)
     {
+		PS.SoundController.Instance.PlaySound(PS.SOUND_ID.GEM_1);
         Destroy(gem);
         currentXP++;
         if (e_gemGet != null) e_gemGet(currentXP, gemsToLevelUp);
@@ -84,6 +85,8 @@ public class PlayerController : MonoBehaviour {
 
     public void LevelUp()
     {
+		PS.SoundController.Instance.PlaySound(PS.SOUND_ID.POWER_UP_1);
+		PS.SoundController.Instance.PlaySound(PS.SOUND_ID.POWER_UP_2);
         animator.SetTrigger(levelUpHash);
         weapon.StopAttacking();
         attackAnimFinish = false;

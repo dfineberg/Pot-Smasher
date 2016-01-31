@@ -74,6 +74,8 @@ public class Weapon : MonoBehaviour {
                 animator.SetTrigger(leftHash);
                 break;
         }
+
+		PS.SoundController.Instance.PlaySound(PS.SOUND_ID.SWORD_1);
     }
 
     public virtual void StopAttacking()
