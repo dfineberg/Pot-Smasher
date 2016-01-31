@@ -14,10 +14,11 @@ public class SMG : Weapon {
 
     IEnumerator ShootRoutine()
     {
+        yield return null;
         while (IsAttacking())
         {
-            GameObject newBullet = (GameObject)Instantiate(bulletPrefab, transform.position, transform.rotation);
-            //SET DIRECTION IN BULLET CLASS
+            GameObject newBullet = (GameObject)Instantiate(bulletPrefab, transform.position, transform.rotation * Quaternion.Euler(0f, 0f, 90f));
+            newBullet.GetComponent<Bullet>().SetDamage(damage);
             yield return new WaitForSeconds(shootInterval);
         }
     }

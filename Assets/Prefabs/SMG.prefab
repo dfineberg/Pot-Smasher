@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9566330}
   - 114: {fileID: 11492912}
   m_Layer: 0
-  m_Name: SMG01
+  m_Name: SMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,8 +59,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  shootInterval: 0.1
-  bulletPrefab: {fileID: 0}
+  shootInterval: 0.005
+  bulletPrefab: {fileID: 108602, guid: 2f2bb4a1193a5cf47b812b49a8c4827f, type: 2}
+  damage: 5
 --- !u!212 &21240244
 SpriteRenderer:
   m_ObjectHideFlags: 1
