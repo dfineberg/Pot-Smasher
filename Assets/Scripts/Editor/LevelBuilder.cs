@@ -49,12 +49,74 @@ namespace PS
 
 		static void BuildLevelPrefab()
 		{
-			GameObject levelCopy = (GameObject)Instantiate(GameObject.FindObjectOfType<Level>().transform.gameObject);
-			Level level = levelCopy.GetComponent<Level>();// (Level)GameObject.FindObjectOfType<Level>();
-			level.pots = new List<Pot>();
-			level.doors = new List<Door>();
+			// check if this level has been copied first
+			int tryLevel = GameObject.FindObjectOfType<Level>().levelNumber;
+			GameObject levelPrefabExists = Resources.Load(tryLevel.ToString(),typeof(GameObject)) as GameObject;
+			if (levelPrefabExists)
+			{
+				Debug.Log("Level " + tryLevel + " already exists in the prefab folder!");
+				return;
+			}
 
+			GameObject levelCopy = (GameObject)Instantiate(GameObject.FindObjectOfType<Level>().transform.gameObject);
+			Level level = levelCopy.GetComponent<Level>();
+
+
+
+			// get list of sprites in the level copy
 			SpriteRenderer[] spriteObjects = levelCopy.GetComponentsInChildren<SpriteRenderer>();
+
+			/*
+			// we need to check if the level has an entrance and an exit
+			bool hasEntrance = (level.levelNumber == 0);
+			bool hasExit = false;
+
+			foreach ( SpriteRenderer s in spriteObjects )
+			{
+				if (s.gameObject.tag == "Exit")
+				{
+					hasExit = true;
+
+					Door exit = s.gameObject.GetComponent<Door>();
+					if (!exit)
+					{
+						s.gameObject.AddComponent<Door>();
+						exit = s.gameObject.GetComponent<Door>();
+					}
+
+					exit.levelNumber = level.levelNumber + 1;
+					level.exit = exit;
+				}
+
+				else if (s.gameObject.tag == "Entrance")
+				{
+					hasEntrance = true;
+
+					Door entrance = s.gameObject.GetComponent<Door>();
+					if (!entrance)
+					{
+						s.gameObject.AddComponent<Door>();
+						entrance = s.gameObject.GetComponent<Door>();
+					}
+
+					entrance.levelNumber = level.levelNumber - 1;
+					level.entrance = entrance;
+				}
+
+				if (hasExit && hasEntrance) break;
+			}
+
+			if (!hasEntrance || !hasExit)
+			{
+				if (!hasEntrance) Debug.Log( "No object tagged as [Entrance]");
+				if (!hasExit) Debug.Log( "No object tagged as [Exit]");
+				DestroyImmediate (levelCopy);
+				return;
+			}
+			*/
+
+			level.pots = new List<Pot>();
+
 			foreach ( SpriteRenderer s in spriteObjects )
 			{
 				if (s.gameObject.tag == "Pot")
@@ -68,16 +130,35 @@ namespace PS
 
 					level.pots.Add(pot);
 				}
-				else if (s.gameObject.tag == "Door")
+
+				if (s.gameObject.tag == "Exit")
 				{
-					Door door = s.gameObject.GetComponent<Door>();
-					if (!door)
+					//hasExit = true;
+
+					Door exit = s.gameObject.GetComponent<Door>();
+					if (!exit)
 					{
 						s.gameObject.AddComponent<Door>();
-						door = s.gameObject.GetComponent<Door>();
+						exit = s.gameObject.GetComponent<Door>();
 					}
 
-					level.doors.Add(door);
+					exit.levelNumber = level.levelNumber + 1;
+					level.exit = exit;
+				}
+
+				else if (s.gameObject.tag == "Entrance")
+				{
+					//hasEntrance = true;
+
+					Door entrance = s.gameObject.GetComponent<Door>();
+					if (!entrance)
+					{
+						s.gameObject.AddComponent<Door>();
+						entrance = s.gameObject.GetComponent<Door>();
+					}
+
+					entrance.levelNumber = level.levelNumber - 1;
+					level.entrance = entrance;
 				}
 			}
 
@@ -96,7 +177,7 @@ namespace PS
 			DestroyImmediate(levelCopy.GetComponent<TileEditor.TileMap>());
 
 			level.transform.name = level.levelNumber.ToString();
-			level.Save();
+			//level.Save();
 		}
 
 	}

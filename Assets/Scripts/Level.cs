@@ -11,25 +11,75 @@ using System.Collections.Generic;
 public class PotData : System.Object
 {
 	public int HP;
+	public float gemChance;
 
 	public PotData(){}
+	public PotData(int hp, float gc) { HP = hp; gemChance = gc; }
 }
 
 namespace PS
 {
 	public class Level : MonoBehaviour 
 	{
+		static List<int> vistedLevels = new List<int>();
+		static int PrevLevel = 0;
+
+		static void ResetVisitedLevels()
+		{
+			vistedLevels = new List<int>();
+		}
+
 		public int levelNumber;
 		public List<Pot> pots;
-		public List<Door> doors;
+		public Door entrance = null;
+		public Door exit = null;
 
 		// Use this for initialization
-		void Start ()
+		void Awake()
 		{
+			//if (exit != null) PlayerController.instance.transform.position = exit.transform.position;
+		}
+
+		void Start()
+		{
+			if (PrevLevel < levelNumber) PlayerController.instance.transform.position = entrance.transform.position;
+			else if (PrevLevel > levelNumber) PlayerController.instance.transform.position = exit.transform.position;
+			//if (entrance != null) PlayerController.instance.transform.position = entrance.transform.position;
+			//else if (Level0Visited) PlayerController.instance.transform.position = exit.transform.position;
+			//else { Level0Visited = true; }
+
+			PrevLevel = levelNumber;
+
+			bool found = false;
+			foreach (int ln in vistedLevels)
+			{
+				if ( ln == levelNumber )
+				{
+					found = true;
+					Load();
+					break;
+				}
+			}
+
+			if (!found)
+			{
+				vistedLevels.Add(levelNumber);
+				InitialisePots();
+			}
+		}
+
+		void InitialisePots()
+		{
+			foreach (Pot pot in pots)
+			{
+				pot.HP = levelNumber + 1;
+				pot.gemChance = 1.0f;
+			}
 		}
 
 		void OnDestroy()
 		{
+			Save();
 		}
 		
 		// Update is called once per frame
@@ -40,8 +90,10 @@ namespace PS
 		public void Load()
 		{
 			//Debug.Log("Loading Level " + levelNumber);
-			BinaryFormatter bf = new BinaryFormatter(); 
-			FileStream file = File.Open(Application.persistentDataPath + "/level" + levelNumber + ".dat", FileMode.Open );
+			BinaryFormatter bf = new BinaryFormatter();
+			string path = Application.persistentDataPath + "/level" + levelNumber + ".dat";
+			FileStream file = File.Open(path, FileMode.Open);
+			//FileStream file = File.Open("Assets/LevelData/Level_" + levelNumber + ".dat", FileMode.Open );
 
 			PotData[] potdata = bf.Deserialize(file) as PotData[];
 			file.Close();
@@ -57,8 +109,11 @@ namespace PS
 		public void Save()
 		{
 			//Debug.Log("Saving Level " + levelNumber);
-			BinaryFormatter bf = new BinaryFormatter(); 
-			FileStream file = File.Create(Application.persistentDataPath + "/level" + levelNumber + ".dat");
+			BinaryFormatter bf = new BinaryFormatter();
+			string path = Application.persistentDataPath + "/level" + levelNumber + ".dat";
+			if (File.Exists(path)) File.Delete(path);
+			FileStream file = File.Create(path);
+			//FileStream file = File.Create("Assets/LevelData/Level_" + levelNumber + ".dat");
 
 			PotData[] potdata = new PotData[pots.Count];
 			for ( int i = 0; i < pots.Count; i++ )
