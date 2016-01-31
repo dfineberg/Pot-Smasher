@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 39c453d8852ea4a5d9f66beed050c507
-timeCreated: 1454189301
+timeCreated: 1454207133
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -26,6 +26,10 @@ TextureImporter:
     21300038: WallTileSet03_19
     21300040: WallTileSet03_20
     21300042: WallTileSet03_21
+    21300044: WallTileSet03_22
+    21300046: WallTileSet03_23
+    21300048: WallTileSet03_24
+    21300050: WallTileSet03_25
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

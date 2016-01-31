@@ -195,221 +195,266 @@ MonoBehaviour:
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Pot
-  - Name: Set
+  - Name: PS Enviro 01
     TileList:
     - Sprite: {fileID: 21300000, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 270
-      FlipHorizontally: 1
+      Rotation: 0
+      FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300002, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 270
-      FlipHorizontally: 1
+      Rotation: 0
+      FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300004, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300006, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300008, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300010, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300012, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300014, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300016, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 270
-      FlipHorizontally: 1
+      Rotation: 0
+      FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300018, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 270
-      FlipHorizontally: 1
+      Rotation: 0
+      FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300020, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300022, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 90
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300024, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 90
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300026, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300028, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
-      FlipVertically: 0
+      FlipVertically: 1
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300030, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
-      Collision: 1
+      Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 180
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
       Tag: Untagged
-    - Sprite: {fileID: 21300000, guid: 99f933ff8822749d4844cccab6a3340f, type: 3}
-      Collision: 0
-      PhysicsMaterial: {fileID: 0}
-      IsTrigger: 0
-      Rotation: 0
-      FlipHorizontally: 1
-      FlipVertically: 0
-      OrderInLayer: -5
-      Tag: Untagged
-    - Sprite: {fileID: 21300002, guid: 99f933ff8822749d4844cccab6a3340f, type: 3}
-      Collision: 0
-      PhysicsMaterial: {fileID: 0}
-      IsTrigger: 0
-      Rotation: 90
-      FlipHorizontally: 1
-      FlipVertically: 1
-      OrderInLayer: -5
-      Tag: Untagged
-    - Sprite: {fileID: 21300004, guid: 99f933ff8822749d4844cccab6a3340f, type: 3}
+    - Sprite: {fileID: 21300032, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
       Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
       Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
-      OrderInLayer: -5
+      OrderInLayer: 0
       Tag: Untagged
-    - Sprite: {fileID: 21300006, guid: 99f933ff8822749d4844cccab6a3340f, type: 3}
+    - Sprite: {fileID: 21300034, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
       Collision: 0
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
       Rotation: 0
       FlipHorizontally: 0
-      FlipVertically: 1
-      OrderInLayer: -5
-      Tag: Untagged
-    - Sprite: {fileID: 21300008, guid: 99f933ff8822749d4844cccab6a3340f, type: 3}
-      Collision: 0
-      PhysicsMaterial: {fileID: 0}
-      IsTrigger: 0
-      Rotation: 90
-      FlipHorizontally: 1
       FlipVertically: 0
-      OrderInLayer: -5
+      OrderInLayer: 0
       Tag: Untagged
-    - Sprite: {fileID: 21300010, guid: 99f933ff8822749d4844cccab6a3340f, type: 3}
+    - Sprite: {fileID: 21300036, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
       Collision: 0
-      PhysicsMaterial: {fileID: 0}
-      IsTrigger: 0
-      Rotation: 90
-      FlipHorizontally: 0
-      FlipVertically: 0
-      OrderInLayer: -5
-      Tag: Untagged
-    - Sprite: {fileID: 21300000, guid: b14eb840b38484479925a557be0b2ca0, type: 3}
-      Collision: 0
-      PhysicsMaterial: {fileID: 0}
-      IsTrigger: 0
-      Rotation: 90
-      FlipHorizontally: 0
-      FlipVertically: 0
-      OrderInLayer: -5
-      Tag: Untagged
-    - Sprite: {fileID: 21300000, guid: 667727fd902e44204a4056a4667767d7, type: 3}
-      Collision: 3
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
       Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
-      OrderInLayer: 1
-      Tag: Pot
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300038, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 0
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300040, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 0
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300042, guid: 39c453d8852ea4a5d9f66beed050c507, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 0
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300000, guid: a9776673628894cf7b996495ec1a64be, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 90
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300002, guid: a9776673628894cf7b996495ec1a64be, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 90
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300004, guid: a9776673628894cf7b996495ec1a64be, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 90
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300006, guid: a9776673628894cf7b996495ec1a64be, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 90
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300008, guid: a9776673628894cf7b996495ec1a64be, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 90
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300010, guid: a9776673628894cf7b996495ec1a64be, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 90
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
+    - Sprite: {fileID: 21300012, guid: a9776673628894cf7b996495ec1a64be, type: 3}
+      Collision: 0
+      PhysicsMaterial: {fileID: 0}
+      IsTrigger: 0
+      Rotation: 90
+      FlipHorizontally: 0
+      FlipVertically: 0
+      OrderInLayer: 0
+      Tag: Untagged
